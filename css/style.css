@@ -1,0 +1,204 @@
+/* #FDF0D5  light beige color */
+/* #440B0B dark brownr */
+/* #160F29 dark grey */
+/* #FFFFFF white */
+
+
+@import url('https://fonts.googleapis.com/css?family=Convergence');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Fresca');
+
+
+/* main elements settings */    
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Convergence', sans-serif;
+    font-size: 20px;
+    background: #160F29;
+    color: #FDF0D5;
+}
+
+a {
+    text-decoration: none;
+    color: #FDF0D5;
+}
+
+p {
+    font-family: 'Fresca', sans-serif;
+    margin: 3%
+}
+
+img{
+    margin: 2%;
+}
+
+/* page banners (top) settings*/
+.full-img {
+    width: 100%;
+}
+
+.banner {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.7));    
+} 
+
+.banner h1{
+    position: relative;
+    z-index: 1;
+}
+/* banners for pages : defferent images for different pages*/
+.index-banner {
+    background-image: url('../images/bookshelf.jpg');
+    background-position: center;
+}
+
+.nypl-banner {
+    background-image: url('../images/nypl.JPG');
+    background-position: center;
+}
+
+.stuttgart-banner {
+    background-image: url('../images/Stuttgart.jpg');
+    background-position: center;
+}
+
+.klementinum-banner{
+    background-image: url('../images/klementinum.jpg');
+    background-position: center;
+}
+
+.trinity-banner {
+    background-image: url("../images/TrinityCollege.jpg");
+    background-position: center;
+}
+
+.admont-banner {
+    background-image: url('../images/admont-background.jpg');
+    background-position: center;
+    width: 100%;
+    position: relative;
+    /*border-style: solid;*/
+}
+
+.admont {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.admont li {
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.george-banner {
+    background-image: url('../images/georgepeabody.jpg');
+    background-position: center;
+}
+
+.george {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.george li{
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+/* navigation bar settings*/
+nav {
+    border-top: 2px solid #FDF0D5;
+}
+
+nav li:first-child {
+    border-left: none
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+nav li {
+    width: 33.33%;
+    text-align: center;
+    border-left: 2px solid #FDF0D5;
+}
+nav a:hover{
+    color: #FFFFFF;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: #FDF0D5;
+    padding: 5px;
+    transition: .25s;
+}
+
+/* libraries images and links settings from the main page*/
+.row {
+    display: flex;
+}
+
+.col-3 {
+    width: 33.33%;
+    /*background: lightgrey;*/
+    padding: 7px;
+    text-align: center;
+    height: 33%;
+}
+
+.col-3 img {
+    width: 100%;
+    height: 210px;
+    /*max-height: 210px;*/
+    border: 2px solid #FDF0D5;
+}
+
+
+.main-content-header {
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 2rem 0;
+    padding-top: 2%;
+}
+
+
+/* footer for all pages*/
+
+footer p { 
+    text-align: center;
+    font-size: .8rem;
+    color: #FDF0D5;
+}
+footer {
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    border-top: 2px solid #FDF0D5;
+}
